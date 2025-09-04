@@ -1,3 +1,4 @@
+<img width="704" height="354" alt="SNPs identified plot" src="https://github.com/user-attachments/assets/f2d5d271-1651-4108-897d-5e9abcbb61e8" />
 # SNP-Analysis-Head-Neck-Cancer
 Comprehensive SNP variant analysis and visualization of whole-exome Sequencing (WES) data from head and neck cancer using R. Open-source project using dataset SRR32633603
 # === Setup ===
