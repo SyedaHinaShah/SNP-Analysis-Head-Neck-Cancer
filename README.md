@@ -1,27 +1,24 @@
 # SNP-Analysis-Head-Neck-Cancer
 Comprehensive SNP variant analysis and visualization of whole-exome Sequencing (WES) data from head and neck cancer using R. Open-source project using dataset SRR32633603
-# === Setup ===
-setwd("/mnt/c/Users/NR/Documents/WES---UBUNTO/")
+# Make Folder 
 if (!dir.exists("plots")) {
   dir.create("plots")
 }
 
-# === Load Libraries ===
+# Load Libraries
 library(VariantAnnotation)
 library(ggplot2)
 library(dplyr)
 library(GenomicRanges)
 
-# === Load VCF File ===
+# Load VCF File
 vcf_file <- "filtered_snps.vcf"
 vcf <- readVcf(vcf_file, genome = "hg38")
-
-# === Basic Info ===
 head(rowRanges(vcf))
 summary(rowRanges(vcf))
 length(vcf)
 
-# === Extract Variant Info ===
+# Extract Variant Info 
 variants <- rowRanges(vcf)
 variant_data <- as.data.frame(mcols(variants))
 variant_data$chr <- as.character(seqnames(variants))
@@ -144,6 +141,7 @@ p10 <- ggplot(mutation_counts, aes(x = "", y = count, fill = mutation)) +
   labs(title = "SNP Mutation Types (Pie Chart)") +
   scale_fill_brewer(palette = "Set3")
 ggsave("plots/10_mutation_type_pie_chart.png", plot = p10
+
 <img width="3000" height="1800" alt="09_manhattan_like_plot" src="https://github.com/user-attachments/assets/f42aa19c-024b-4174-93d2-aaaffbddb092" />
 <img width="3000" height="1800" alt="08_snp_density_heatmap" src="https://github.com/user-attachments/assets/1f267d2c-5db2-447c-bfc4-8be24c5c11eb" />
 <img width="3000" height="2400" alt="07_qual_vs_position_faceted" src="https://github.com/user-attachments/assets/e1c7b194-f2b0-4089-b1aa-b1f628d190c2" />
