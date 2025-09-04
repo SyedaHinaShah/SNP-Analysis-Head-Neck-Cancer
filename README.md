@@ -1,4 +1,3 @@
-<img width="704" height="354" alt="SNPs identified plot" src="https://github.com/user-attachments/assets/f2d5d271-1651-4108-897d-5e9abcbb61e8" />
 # SNP-Analysis-Head-Neck-Cancer
 Comprehensive SNP variant analysis and visualization of whole-exome Sequencing (WES) data from head and neck cancer using R. Open-source project using dataset SRR32633603
 # === Setup ===
@@ -154,4 +153,5 @@ ggsave("plots/10_mutation_type_pie_chart.png", plot = p10
 <img width="2400" height="1500" alt="03_variant_count_per_chr" src="https://github.com/user-attachments/assets/348226fb-5a0b-44a5-a2d0-b0767c61010a" />
 <img width="2400" height="1500" alt="02_qual_distribution_pass_variants" src="https://github.com/user-attachments/assets/c380b3ac-2f10-4659-bbb5-2969c01c48b4" />
 <img width="2400" height="1500" alt="01_qual_distribution_all_variants" src="https://github.com/user-attachments/assets/2b716113-d5f4-497e-86fe-07a7b60d988d" />
+<img width="704" height="354" alt="SNPs identified plot" src="https://github.com/user-attachments/assets/f2d5d271-1651-4108-897d-5e9abcbb61e8" />
 
